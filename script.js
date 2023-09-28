@@ -50,7 +50,7 @@ btn2.addEventListener('click', function(){
         document.getElementById('withdraw-input').value = '';
 
     }
-    else if (newWithdrawValue<TotalBalanceValue){
+    else if (newWithdrawValue<=TotalBalanceValue){
         let totalBalance = TotalBalanceValue - newWithdrawValue;
         document.getElementById('total-balance').innerHTML = totalBalance;
 
