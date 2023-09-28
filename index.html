@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    
+   <header>
+    <h1 class="text-center text-5xl font-medium mt-4">My <span class="text-red-600 font-bold">Bank</span>!!!</h1>
+   </header>
+
+   <main class="w-3/4 mx-auto mt-5">
+    <section class="flex gap-4 justify-center flex-wrap">
+        <div class=" bg-[#fb923c] w-80 h-40 rounded p-7">
+            <h1 class="text-3xl font-normal">Diposit</h1>
+            <p class="text-5xl font-semibold ">$<span id="diposit-balance" >500</span></p>
+        </div>
+        <div class=" bg-[#38bdf8] w-80 h-40 rounded p-7">
+            <h1 class="text-3xl font-normal">Withdraw</h1>
+            <p class="text-5xl font-semibold ">$<span id="diposit-balance" >100</span></p>
+        </div>
+        <div class=" bg-[#34d399] w-80 h-40 rounded p-7">
+            <h1 class="text-3xl font-normal">Balance</h1>
+            <p class="text-5xl font-semibold ">$<span id="diposit-balance" >300</span></p>
+        </div>
+        
+    </section>
+    <section class="flex gap-4 justify-center flex-wrap">
+        <div id="down" class=" mt-6 p-7 bg-[#14b8a6] w- h-60 rounded">
+            <h1 class="text-3xl font-medium">Your diposit</h1>
+            <input class="block w-3/4 rounded h-10 my-4" type="number" placeholder=" Your amount">
+            <button class="bg-[#fe751a] px-4 py-2 rounded text-2xl">Deposit</button>
+        </div>
+        <div id="down" class=" mt-6 p-7 bg-[#0891b2] w- h-60 rounded">
+            <h1 class="text-3xl font-medium">Your withdraw</h1>
+            <input class="block w-3/4 rounded h-10 my-4" type="number" placeholder=" Your amount">
+            <button class="bg-[#fe751a] px-4 py-2 rounded text-2xl">Withdraw</button>
+        </div>
+        
+    </section>
+   </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
