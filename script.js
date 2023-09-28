@@ -45,6 +45,11 @@ btn2.addEventListener('click', function(){
         alert('low balace');
         document.getElementById('withdraw-input').value = '';
     }
+    else if(newWithdrawValue<=0){
+        alert(`can't withdraw`);
+        document.getElementById('withdraw-input').value = '';
+
+    }
     else if (newWithdrawValue<TotalBalanceValue){
         let totalBalance = TotalBalanceValue - newWithdrawValue;
         document.getElementById('total-balance').innerHTML = totalBalance;
