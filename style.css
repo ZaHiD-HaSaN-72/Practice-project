@@ -10,7 +10,25 @@ body{
     width: 30.5rem;
 
 }
+#down1{
+    width: 30.5rem;
+
+}
+#down1>h1{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
     -webkit-appearance: none;
+}
+abck{
+    color:#b524fe;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent, rgb(25, 251, 225), rgb(24, 255, 147), rgb(0, 255, 55));
+    border-radius: 6px;
 }
