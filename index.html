@@ -9,27 +9,30 @@
     
 </head>
 <body>
-    
+    <!-- bank start -->
    <header>
     <h1 class="text-center text-5xl font-medium mt-4">My <span class="text-red-600 font-bold">Bank</span>!!!</h1>
    </header>
 
+<!-- deposit section start -->
    <main class="w-3/4 mx-auto mt-5">
     <section class="flex gap-4 justify-center flex-wrap">
-        <div class=" bg-[#fb923c] w-80 h-40 rounded p-7">
+        <div class=" bg-[#fb923c] w-80 h-40 rounded p-7 overflow-x-auto">
             <h1 class="text-3xl font-normal">Deposit</h1>
             <p class="text-5xl font-semibold ">$<span id="deposit-balance" >00</span></p>
         </div>
-        <div class=" bg-[#38bdf8] w-80 h-40 rounded p-7">
+        <div class=" bg-[#38bdf8] w-80 h-40 rounded p-7 overflow-x-auto">
             <h1 class="text-3xl font-normal">Withdraw</h1>
             <p class="text-5xl font-semibold ">$<span id="withdraw-balance" >00</span></p>
         </div>
-        <div class=" bg-[#34d399] w-80 h-40 rounded p-7">
+        <div class=" bg-[#34d399] w-80 h-40 rounded p-7 overflow-x-auto">
             <h1 class="text-3xl font-normal">Balance</h1>
             <p class="text-5xl font-semibold ">$<span id="total-balance" >00</span></p>
-        </div>
-        
+        </div>  
     </section>
+<!-- deposit section end -->
+
+<!-- withdraw section start -->
     <section class="flex gap-4 justify-center flex-wrap">
         <div id="down" class=" mt-6 p-7 bg-[#14b8a6] w- h-60 rounded">
             <h1 class="text-3xl font-medium">Your deposit</h1>
@@ -38,19 +41,19 @@
         </div>
         <div id="down" class=" mt-6 p-7 bg-[#0891b2] w- h-60 rounded">
             <h1 class="text-3xl font-medium">Your withdraw</h1>
-            <input id="withdraw-input" class="witd-inpt block w-11/12 rounded h-10 my-4" type="number" placeholder=" Your amount">
+            <input  id="withdraw-input" class="witd-inpt block w-11/12 rounded h-10 my-4" type="number" placeholder=" Your amount">
             <button id="withdraw-btn" class="bg-[#fe751a] px-4 py-2 rounded text-2xl">Withdraw</button>
-        </div>
-        
+        </div>  
     </section>
+<!-- withdraw section end -->
 
+<!-- history section start-->
     <section class="flex gap-4 justify-center flex-wrap">
         <div id="down1" class=" mt-6 p-7 bg-[#e9fa43] w- h-[18rem] rounded">
             <h1 class="text-3xl font-medium text-center ">Deposit history</h1>
             <div id="text-box1" class="text-[1.2rem] py-5 px-3 h-[11rem] overflow-y-auto">
                 <p id="htry-text1"></p>
             </div>
-
         </div>
 
         <div id="down1" class=" mt-6 p-7 bg-[#b524da] h-[18rem] rounded overflow-hidden">
@@ -62,11 +65,14 @@
         </div>
         
     </section>
-    
+    <!-- history section end -->
+
+
    </main>
+   <!-- bank end -->
 
     <script src="script.js"></script>
-    <script src="history.js"></script>
+    <script src="histry.js"></script>
     
 </body>
 </html>
