@@ -60,8 +60,10 @@ btn.addEventListener('click', function(){
     let txt = document.createElement("p");
 
     if(newDepositValue>0){
-        txt.innerHTML= `${count +0 }.--> Deposit Amount: ${newDepositValue}.00 TK ${time}`;
+        txt.innerHTML= `${count +1 }.--> Deposit Amount: ${newDepositValue}.00 TK ${time}`;
         textBox1.appendChild(txt);
+        txt.style.borderBottom='1px solid black';
+        Text.style.marginTop = '4px';
     }
     else{
         document.getElementById('deposit-input').value =''; 
@@ -126,8 +128,10 @@ btn2.addEventListener('click', function(){
     
 
      if(newWithdrawValue>0 && newWithdrawValue<TotalBalanceValue){
-         Text.innerHTML= `${count +0 }.--> Withdraw Amount: ${newWithdrawValue}.00 TK ${time}`;
+         Text.innerHTML= `${count +1 }.--> Withdraw Amount: ${newWithdrawValue}.00 TK ${time}`;
          textBox2.appendChild(Text);
+         Text.style.borderBottom='1px solid black';
+         Text.style.marginTop = '5px';
     }
     else{
         document.getElementById('withdraw-input').value = ''; 
