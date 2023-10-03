@@ -1,5 +1,11 @@
  let btn = document.querySelector('#deposit-btn');
 let btn2 = document.getElementById("withdraw-btn");
+function zero(value){
+    if(value<10){
+        value = '0'+value;
+    }
+    return value;
+};
 
 btn.addEventListener('click', function(){
     // deposit section
@@ -38,8 +44,17 @@ btn.addEventListener('click', function(){
     let dys = date.getUTCDate();
     let mths = date.getMonth();
     let yrs = date.getFullYear();
+    let ampm = hrs<12? "AM":"PM";
     
-    let time = `Time:- ${dys +"/"+mths+"/"+yrs} ${hrs +':'+mnts+':'+scds}`;
+    
+    // add zero
+    mnts = zero(mnts);
+    scds = zero(scds);
+    dys = zero(dys);
+    mths = zero(mths);
+   //add zero end 
+
+    let time = `Date:- ${dys +"/"+mths+"/"+yrs} Time:- ${hrs +':'+mnts+':'+scds} ${ampm}`;
 
     let count = textBox1.childElementCount;
     let txt = document.createElement("p");
@@ -94,8 +109,15 @@ btn2.addEventListener('click', function(){
     let dys = date.getUTCDate();
     let mths = date.getMonth();
     let yrs = date.getFullYear();
-    
-    let time = `Time:- ${dys +"/"+mths+"/"+yrs} ${hrs +':'+mnts+':'+scds}`;
+    let ampm = hrs<12? "Am":"PM";
+
+    // add zero
+     mnts = zero(mnts);
+     scds = zero(scds);
+     dys = zero(dys);
+     mths = zero(mths);
+    //add zero end  
+    let time = `Date:- ${dys +"/"+mths+"/"+yrs} Time:- ${hrs +':'+mnts+':'+scds} ${ampm}`;
     
     
      let count = textBox2.childElementCount;
