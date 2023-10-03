@@ -4,7 +4,7 @@ let btn2 = document.getElementById("withdraw-btn");
 btn.addEventListener('click', function(){
     // deposit section
     let newDepositString = document.getElementById('deposit-input').value;
-    let newDepositValue = parseFloat (newDepositString);
+    var newDepositValue = parseFloat (newDepositString);
       
     let depositTotalString = document.getElementById('deposit-balance').innerHTML;
     let depositTotalValue = parseFloat (depositTotalString);
@@ -63,4 +63,7 @@ btn2.addEventListener('click', function(){
     }
 
 
-})
+});
+
+
+
